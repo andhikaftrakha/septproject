@@ -45,9 +45,9 @@ class Signup extends Component {
         .then(function(result) {
             console.log(result)
             if(result.status >= 400 || result.status < 200) {
-                throw new Error("proses gagal !");
+                throw new Error("ERROR LOGIN !");
             }else{
-                alert("Proses signup berhasil")
+                alert("Signup Sucess")
                 window.location.href = '/login'
             }
         })
